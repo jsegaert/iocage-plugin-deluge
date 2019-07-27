@@ -8,8 +8,8 @@ sysrc -f /etc/rc.conf deluge_web_confdir="/usr/local/etc/deluge"
 mkdir -p /usr/local/etc/deluge
 chown -R nobody:nobody /usr/local/etc/deluge
 
-echo "Deluge Web UI Password: deluge"
-echo "To change, login and you will be prompted."
+echo "Deluge Web UI Password: deluge" > /root/PLUGIN_INFO
+echo "To change, login and you will be prompted." >> /root/PLUGIN_INFO
 
 # Start the services
 service deluged start
