@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Temporary hack to downgrade libtorrent-rasterbar as per https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=254118
-pkg install libiconv
+pkg install -y libiconv
 pkg add -f https://github.com/jsegaert/binaries/releases/download/V0%2C1/libtorrent-rasterbar-1.2.10.txz
 pkg add -f https://github.com/jsegaert/binaries/releases/download/V0%2C1/py37-libtorrent-rasterbar-1.2.10.txz
 
